@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //array ko emplty karna
+      // let book = ["math","science","physics","bio"]
+      // book = [];
+      //or
+      // book.length = 0;
+      // console.log(book);
+
+      //====================================================
+      //splite:=ye ak string ko splite karta hai
+      //   let text = "hello welcome to my home page";
+      //  let wordsplite = text.split(' ')//space se alag kareg
+      //  let wordsplite = text.split('h')//word se alag kar deta hai
+      //   console.log(wordsplite )
+
+      //=========================================================
+      // do array ko jodna (concat):
+      // let arr1 = ["hestory","math"]
+      // let arr2= ["hindi", "physics"]
+      // let arr3 = ["neha","bhargavi"]
+      // let add = arr1.concat(arr2,arr3);
+      // console.log(add)
+
+      //===========================================================
+      //multi dimentional array ( array ke andar array):-
+      //   let book = ["math", "science", "physics", "bio"];
+      //   let bookwithpage = [
+      //     ["math", "200"],
+      //     ["science", 400],
+      //     ["physics", 500],
+      //   ];
+      // console.log(bookwithpage[0])//output:- ['math', '200']
+      // console.log(bookwithpage[2][1])//outpu:-500
+      //console.log(bookwithpage[0][1])//output:-200
+
+      //=======================================================================
+    //   let book = ["math", "science", "physics", "bio"];
+    //   let booklenght = book.length;
+    //   for (let i = 0; i < booklenght; i++) {
+    //     console.log(`element ${i} is ${book[i]}`);
+    //     console.log(book[i]);
+    //   }
+      //   console.log(booklenght);
+
+    //======================================================================
+    //FOREACH:=
+    let book = ["math", "science", "physics", "bio"];
+    book.forEach(myfun);
+    function myfun(value){
+        console.log(value);
+    }
+    </script>
+  </body>
+</html>

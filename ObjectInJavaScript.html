@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Object:-1.property,2.action or function
+      //object:-
+      // let person ={}
+      // console.log(person);
+
+      //==============================================
+      //properties:-
+      // let person ={
+      //      firstName : "ankita",
+      //      lastName : "nikita"
+      // }
+      // console.log(person);
+      //document.write(person.firstName)//dot notation
+      //or
+      //document.write(person['lastName'])//array notation
+      //========================================================
+
+    //   let person = {
+    //     firstName: "ankita",
+    //     lastName: "nikita",
+    //   };
+
+    //   person.age = 30; //property ko add karna
+    //   document.write(person.age);
+    //   console.log(person);
+
+    //   delete person.age;
+    //   console.log(person);
+    //========================================================
+    
+      //for in loop:-
+
+      let person = {
+        firstName: "ankita",
+        lastName: "nikita",
+      };
+      person.age = 30;
+
+      for (let key in person){
+        document.write(key +" : " + person[key] +"<br>" )
+      }
+    </script>
+  </body>
+</html>
