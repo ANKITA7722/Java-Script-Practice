@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <li class="cl1">list 1</li>
+    <li id="first">list 2</li>
+    <li class="cl1">list 3</li>
+    <div id="div1">
+        <p>para1</p>
+        <p>para2</p>
+        <h1>heading1</h1>
+        <h2>Heading 2</h2>
+    </div>
+
+
+    <h2 class="intro">heading3</h2>
+    <div>
+      <p class="intro">para1</p>
+      <p>para2</p>
+      <h1 >heading1</h1>
+      <h2 class="intro">Heading 2</h2>
+    </div>
+    <script>
+      //DOM:=Document Object Model
+      //===============================================
+      //using Id:-
+      //   let elm = document.getElementById("first");
+      // value ko get karna
+      // console.log(elm.innerHTML);
+      // value ko set karna
+      //elm.innerHTML = "<p>hello </p>";
+
+      //==========================================================================================
+      //ClassName se Element ko select krna :=
+
+      //example:-1
+    //   let elm = document.getElementsByClassName("cl1");
+    //   elm.innerHTML = "<p>hello </p>";
+    //   console.log(elm.length); //output:=2
+
+      //example:2:==multipule ko ak sath select karke use kar sakte hai
+    //   let elm1 = document.getElementsByClassName("cl1");
+    //   for (let i = 0; i < elm1.length; i++) {
+    //     elm1[i].innerHTML = "<p>welcome</p>";
+    //   }
+
+      //============================================================================================
+      //Tag Name Se select kara:=
+
+      // let elm1 = document.getElementsByTagName("p");
+      // for (let i = 0; i < elm1.length; i++) {
+      //   elm1[i].innerHTML = "welcome";
+      // }
+      // //or
+      // let div = document.getElementById("div1");
+      // let elm = div.getElementsByTagName("h1")
+      // for (let i = 0; i < elm.length; i++) {
+      //   elm[i].innerHTML = "H1 Heading Change useing tag name";
+      // }
+      //======================================================
+
+      //Query Selector:=problem hai
+      let elm2 = document.querySelectorAll("p.intro")
+      for (let i = 0; i < elm2.length; i++) {
+        elm2[i].innerHTML = "H1 Heading Change useing tag name";
+      }
+    </script>
+  </body>
+</html>

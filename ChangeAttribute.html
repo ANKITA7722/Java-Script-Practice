@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" name="form1" >send</button>
+
+    <script>
+        let btn = document.getElementById("btn");
+        //=============================================
+        //attribute add karna:-
+        // btn.setAttribute("name","form1")
+        // btn.setAttribute("class","form1")
+        //==============================================
+        //value pta kise kare:-
+        // let val=btn.getAttribute("name");
+        // console.log(val)
+        //==============================================
+        //remove Attribute:-
+        let remove =btn.removeAttribute("name");
+        console.log(remove);
+        //================================================
+        //elemet me attrubute hai ya nahi ye kaise check karte  hai:
+        let valcheck = btn.hasAttribute("name");
+        console.log(valcheck);
+        //output:=false
+    </script>
+</body>
+</html>

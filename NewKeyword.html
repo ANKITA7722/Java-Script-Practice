@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //New kryword:--
+      // let person = new Object();
+      // person.name = "Ankita";
+      // person.age = 32
+      // console.log(person);
+      //=======================================
+      //get function ka use ham karte haim kisi bhi property ki value ko maipulate (change karke)
+      // object se bahar lana hai islte get fuction ka use karte hai
+    //   let person = {
+    //     name: "ankita",
+    //     age: 32,
+    //     getname: function () {
+    //       return this.name.toLocaleUpperCase();
+    //     },
+    //     //or
+    //     get getage() {
+    //       return this.age;
+    //     },
+    //   };
+    //   console.log(person.getname());
+    //   console.log(person.getage);
+
+      //============================================
+//seter:-function ka use ham karte haim kisi bhi property ki value ko save (inter)karte huye
+      // object se bahar lana hai islte get fuction ka use karte hai
+
+      let person = {
+        name: "ankita",
+        age: 32,
+        set setage(n) {
+            this.name=n.toLocaleUpperCase();
+        },
+      };
+      person.setname = "nikita"
+      console.log(person);
+    </script>
+  </body>
+</html>
