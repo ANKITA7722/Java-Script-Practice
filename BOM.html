@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Browser Object Model -->
+<!-- jo bhi global variable hota hai  wo window ka object hota hai -->
+
+    <script>
+var x = "hello"
+console.log(window.x);//hello
+//====================================
+let y = "hello"
+console.log(window.y);//undefine
+//====================================
+function xyz(){
+    console.log("hii......")
+}
+window.xyz();
+//output:-hi.......
+//alert alosi is the windows object:-
+alert("welcom")
+    </script>
+</body>
+</html>

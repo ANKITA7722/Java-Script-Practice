@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Event Bubbling and Event Capturing</title>
+    <style>
+        body{
+            padding: 100px;
+            background-color: cornsilk;
+        }
+        #div1{
+            padding: 50px;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body onclick="bodyClick()">
+    <div id="div1" onclick="divClick()">
+        <button id="btn" onclick="btnClick()">click me</button>
+    </div>
+   
+    <script>
+         
+        function bodyClick(){
+            alert("body clicked.......");
+        }
+
+        //event capturing me parent to child event exicute hoga:-
+        function divClick(){
+            alert("div clicked.......");
+        }
+         //event bubbling me child to parent event exicute hoga :-
+        function btnClick(e){
+            alert("button clicked.......");
+            e.stopPropagation();//its not working
+        }
+       
+
+
+        
+
+    </script>
+</body>
+</html>

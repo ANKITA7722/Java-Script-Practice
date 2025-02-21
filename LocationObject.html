@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" onclick="fun()">Redirect</button>
+    <script>
+        //first mathode:-
+// function fun(){
+//     window.location = "http://www.google.com";
+// }
+//or
+//second mathode:-
+// function fun(){
+//     location.href = "http://www.google.com";
+// }
+
+//thired mathode :- assign mathode :-aapke browser ke hestory me entry dalta hai
+// function fun(){
+//     location.assign("http://www.google.com");
+// }
+
+//Forth Mathode:-Replace Mathode:-aapke browser ke hestory me entry nhi dalta hai
+//isme back button nhi deta
+// function fun(){
+//     location.replace("http://www.google.com");
+// }
+
+// fifth mathode :RELOAD:-
+function fun(){
+    location.reload();
+}
+    </script>
+</body>
+</html>

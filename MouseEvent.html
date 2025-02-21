@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#box{
+   display: flex;
+   justify-content: space-around;
+}
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(214, 226, 43);
+}
+#box2{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(226, 101, 43);
+}
+#box3{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(137, 43, 226);
+}
+#box4{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(58, 226, 43);
+}
+    </style>
+    
+</head>
+<body>
+    <div id="box">
+    <div id="box1" onclick="fun1()">click me </div>
+        <div id="box2" oncontextmenu="fun2()"> right click</div>
+            <div id="box3" ondblclick="fun3()">dubule click</div>
+           
+           
+
+    </div>
+    <script>
+function fun1(){
+    alert("click m")
+}
+function fun2(){
+    alert("right click")
+}
+function fun3(){
+    alert(" dubule click m")
+}
+
+    </script>
+</body>
+</html>

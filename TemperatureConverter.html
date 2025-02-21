@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter Projet</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            z-index: 0;
+            margin: 0%;
+            padding: 0%;
+        }
+        h1{
+            text-align: center;
+        }
+        #container{
+            text-align: center;
+            background-color: rgb(56, 192, 137);
+            padding: 100px;
+            display:flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin: 50px;
+            font-size: 20px;
+            font-weight: 700;
+            color: rgb(73, 14, 14);    
+        }
+        #cel{
+            margin: 10px;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+        }
+        #fah{
+            margin: 10px;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+        }
+        @media screen and (max-width: 1024px) {
+    #container {
+        flex-direction: column;
+        padding: 50px;
+    }
+    #cel, #fah {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        padding: 30px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    #cel, #fah {
+        font-size: 16px;
+    }
+}
+    </style>
+    </style>
+</head>
+<body>
+<h1> Temperature Converter</h1>
+<div id="container">
+    <div class="input-div">
+        <label>Celsius</label> <br>
+        <input type="number" value="0" id="cel">
+    </div>
+    <br>
+    
+    <div class="input-div">
+        <label>Fahrenheight</label> <br>
+
+        <input type="number" value="1" id="fah">
+    </div>
+</div>
+    <script>
+var cel = document.getElementById("cel");
+var fah = document.getElementById("fah");
+
+cel.addEventListener('input',function(){
+   // console.log("cell cahnage")
+   let c = this.value;
+   let f = (c * 9/5) + 32;
+   if(!Number.isInteger(f)){
+    f = f.toFixed(4)
+   }
+   fah.value = f;
+})
+
+fah.addEventListener('input',function(){
+   // console.log("fah cahnage")
+   let f = this.value;
+   let c = (f - 32) * 5/9;
+   if(!Number.isInteger(c)){
+    c = c.toFixed(4)
+   }
+   cel.value = c;
+})
+ 
+ 
+ </script>
+</body>
+</html>
