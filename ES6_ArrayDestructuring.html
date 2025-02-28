@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Destructuring</h1>
+    <script>
+let book = ["ankita bobde" , 20 , 1203];
+let[name,age,price] = book;
+console.log((name));//ankita bobde
+console.log((age));//20
+console.log((price));//1203
+//console.log((nick));//:-undefined
+//===============================================
+//nasted array
+let book1 = ["september",27,2001,["bhopal",480106]];
+let[month,date,year,[city,pincode]] = book1;
+console.log(city)
+    </script>
+</body>
+</html>
